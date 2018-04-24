@@ -1,0 +1,23 @@
+body {background-color: hsl(248,53%, 58%)}
+
+h1 {font-family: Verdana;
+    font-size: 30px; 
+    font-weight: bold;
+    color: SlateBlue;
+    background-color: MediumSeaGreen;
+    margin: 2px 2px 25px 2px;
+    padding: 9px;
+    border-bottom: 4px solid DodgerBlue;}
+
+p {font-family: Verdana;
+    font-size: 12px; 
+    font-weight: italic;
+    color: rgb(0,0,0);
+    background-color: Orange;
+    border: 2px solid #ee82ee;}
+
+.list {font-family: Arial;
+       font-size: 16px; 
+       font-weight: normal;
+       color: Tomato;
+       background-color: LightGray;}
