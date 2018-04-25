@@ -1,0 +1,19 @@
+function createBulletpoint() {
+  var ul = document.getElementById("list");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode("Four"));
+  ul.appendChild(li);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="testscript.js"></script>
+</head>
+<body>
+
+<p id="demo" onclick="createBulletpoint()">Click me to change my text color.</p>
+<ul id="list"></ul>
+
+</body>
+</html>
