@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-function createBulletpoint() {
- var x = document.getElementById("tf");
- var text = x.value;
- var ul = document.getElementById("list");
- var li = document.createElement("li");
- li.appendChild(document.createTextNode(text));
- ul.appendChild(li);
-}
-function createBulletpointEnter(event) {
- if(event.keyCode == 13) {  
-  var x = document.getElementById("tf");
-  var text = x.value;
-  var ul = document.getElementById("list");
-  var li = document.createElement("li");
-  li.appendChild(document.createTextNode(text));
-  ul.appendChild(li);
-  return false;
- }
-=======
 $(function () {  // DOMContentLoaded
     $("#addtodo").attr("style", "visibility:visible");
     addDeleteListener();
@@ -57,5 +37,4 @@ function addCheckListener() {
     $(document).on("click", ".check", function (event) {
         $(this).parent().parent().toggleClass("done", this.checked);
     });
->>>>>>> 9522841e5d39cf5821099be8f77be2bcb308e6ed
 }
