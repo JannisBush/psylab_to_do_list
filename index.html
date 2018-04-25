@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>To-Do List</title>
-    <meta name="simple to-do list">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script src="script.js"></script>
+    	<meta charset="utf-8">
+    	<title>To-Do List</title>
+    	<meta name="simple to-do list">
+    	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    	<script src="script.js"></script>
   </head>
   <body>
 	<h1>To-Do List:</h1>
 	<p>This is a simple todo list which helps you to stay organized.<br />Just try it out ;-)</p>
-    <div>
-    	<ul class="list">
-		<li>Add bullet points to your todo list</li>
-	</ul>
-	<p><button type="button" id="bt">Add to list</button> <input id="tf" type="text" /></p>
-      </div>
+    	<div>
+ 		<form  id="addtodo" style="visibility=hidden">
+            	New todo: <input id="newtodo" size="20">
+        	</form>
+        <br>
+        	<table><tbody id="thelist"></tbody></table>
+      	</div>
   </body>
 </html>

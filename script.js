@@ -1,8 +1,40 @@
-document.getElementsById("bt").onclick = createBulletPoint(){
-		 					     var text, list;
-		 					     text = tf.value
-						 	     list = document.getElementsByClassName("list")
-		 					     var li = document.createElement("li");
-  							     li.appendChild(document.createTextNode(text));
-							     list.appendChild(li)
-							     }
+$(function () {  // DOMContentLoaded
+    $("#addtodo").attr("style", "visibility:visible");
+    addDeleteListener();
+    addNewEntryListener();
+    addCheckListener();
+    addDefaults();
+
+});
+
+function addListEntry(value) {
+    $("#thelist").append("<tr class='todo'><th>" + value +
+            "</th><th><input class='check' type='checkbox'></th><th><input type='button' class='del' value='Delete'></th></tr>");
+}
+
+function addDefaults() {
+    addListEntry("Shopping");
+    addListEntry("Watch TV");
+    addListEntry("Learn");
+}
+
+function addDeleteListener() {
+    $(document).on("click", ".del", function () {
+        $(this).parent().parent().fadeOut("slow", function () {
+            $(this).remove();
+        });
+    });
+}
+
+function addNewEntryListener() {
+    $("#addtodo").on("submit", function (event) {
+        addListEntry($("#newtodo").val());
+        event.preventDefault();
+    });
+}
+
+function addCheckListener() {
+    $(document).on("click", ".check", function (event) {
+        $(this).parent().parent().toggleClass("done", this.checked);
+    });
+}
