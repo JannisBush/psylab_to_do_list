@@ -10,11 +10,14 @@
   <body>
 	<h1>To-Do List:</h1>
 	<p>This is a simple todo list which helps you to stay organized.<br />Just try it out ;-)</p>
-    <div>
-    	<ul class="list">
-		<li>Add bullet points to your todo list</li>
-	</ul>
-	<p><button type="button" id="bt">Add to list</button> <input id="tf" type="text" /></p>
-      </div>
+    	<div>
+    		<ul id="list">
+			<li>Add bullet points to your todo list</li>
+		</ul>
+		<p>
+			<button type="button" onclick="createBulletpoint()">Add to list</button> 
+			<input type="text" id="tf" size="30" maxlength="100" onkeypress="return createBulletpointEnter(event)">
+		</p>
+      	</div>
   </body>
 </html>

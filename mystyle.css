@@ -16,7 +16,7 @@ p {font-family: Verdana;
     background-color: Orange;
     border: 2px solid #ee82ee;}
 
-.list {font-family: Arial;
+#list {font-family: Arial;
        font-size: 16px; 
        font-weight: normal;
        color: Tomato;
