@@ -21,3 +21,17 @@ p {font-family: Verdana;
        font-weight: normal;
        color: Tomato;
        background-color: LightGray;}
+
+.del {
+    color:red;
+}
+
+.not_done {
+    color: black;
+    text-decoration: none;
+}
+
+.done {
+    color: gray;
+    text-decoration: line-through;
+}
