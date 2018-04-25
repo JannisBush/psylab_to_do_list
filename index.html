@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    	<meta charset="utf-8">
+    	<title>To-Do List</title>
+    	<meta name="simple to-do list">
+    	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    	<script src="script.js"></script>
+  </head>
+  <style>
+  button {
+	color: red;
+  }
+  h2 {
+  	color: MediumSeaGreen;
+    fontsize: 15px;
+  }
+  </style>
+  <body>
+	<h1>To-Do List:</h1>
+	<p>This is a simple todo list which helps you to stay organized.<br />Just try it out ;-)</p>
+    	<div>
+ 		<form  id="addtodo" style="visibility=hidden">
+            	New todo: <input id="newtodo" size="20">
+        	</form>
+        <br>
+        	<table><tbody id="thelist"></tbody></table>
+      	</div>
+	
+	<h2>Jodel des Tages</h2>
+
+	<p id="demo" style="display:none">Klausurenphase hat 15 Buchstaben.<br>
+    								  Saaaaauuuufeeen aber auch.<br>
+                                      Ein Zufall? Ich glaube nicht.</p>
+
+	<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+  </body>
+</html>
