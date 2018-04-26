@@ -4,8 +4,15 @@ $(function () {  // DOMContentLoaded
     addNewEntryListener();
     addCheckListener();
     addDefaults();
+    addButtonListener();
 
 });
+
+function addButtonListener() {
+    $("#jodel").on("click", function(event) {
+        $("#demo").toggleClass("no-vis");
+    }); //onclick="document.getElementById('demo').style.display='block'"
+}
 
 function addListEntry(value) {
     $("#thelist").append("<tr class='todo'><th>" + value +
